@@ -59,10 +59,11 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d7def7;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
@@ -72,6 +73,90 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(26, 35, 126, 0.05);
+  border: 1px solid rgba(26, 35, 126, 0.08);
+}
+
+.participants-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #1a237e;
+}
+
+.participants-count {
+  min-width: 28px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: #1a237e;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #24304f;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(26, 35, 126, 0.08);
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fff1f1 0%, #ffdede 100%);
+  color: #b42318;
+  border: 1px solid #f3b4b4;
+  flex-shrink: 0;
+}
+
+.participant-delete:hover {
+  background: linear-gradient(180deg, #ffdede 0%, #ffc7c7 100%);
+}
+
+.participant-delete svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.participant-item.empty {
+  color: #6b7280;
+  font-style: italic;
+  justify-content: flex-start;
 }
 
 .form-group {
